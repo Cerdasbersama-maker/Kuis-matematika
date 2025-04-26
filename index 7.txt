@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal Interaktif</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #eaf6f9;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 700px;
+            margin: auto;
+        }
+        .feedback {
+            margin-top: 20px;
+            background-color: #fff3e0;
+            padding: 15px;
+            border-radius: 8px;
+            display: none;
+        }
+        .feedback.salah {
+            color: #a94442;
+        }
+        .button-pdf {
+            background-color: #007b8f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .wrong {
+            color: red;
+            font-weight: bold;
+        }
+        .answer-label {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h3>Soal 1</h3>
+    <p><strong>Campuran asam basa berikut yang akan membentuk garam netral adalah . . . .</strong></p>
+    <form id="quizForm">
+        <label class="answer-label">
+            <input type="radio" name="answer" value="A"> A. HClO dan NaOH
+        </label>
+        <label class="answer-label">
+            <input type="radio" name="answer" value="B"> B. H<sub>2</sub>SO<sub>4</sub> dan NH<sub>4</sub>OH
+        </label>
+        <label class="answer-label">
+            <input type="radio" name="answer" value="C"> C. Na<sub>2</sub>SiO<sub>3</sub>
+        </label>
+        <label class="answer-label">
+            <input type="radio" name="answer" value="D"> D. HCl dan NaOH
+        </label>
+        <label class="answer-label">
+            <input type="radio" name="answer" value="E"> E. CH<sub>3</sub>COOH dan NaOH
+        </label>
+        <br>
+        <button type="button" onclick="cekJawaban()">Submit</button>
+    </form>
+
+    <div id="feedback" class="feedback"></div>
+</div>
+
+<script>
+function cekJawaban() {
+    const pilihan = document.querySelector('input[name="answer"]:checked');
+    const feedback = document.getElementById('feedback');
+
+    if (!pilihan) {
+        alert('Pilih salah satu jawaban!');
+        return;
+    }
+
+    if (pilihan.value === 'D') {
+        feedback.innerHTML = `<p>Jawaban anda <strong>benar</strong>.</p>`;
+        feedback.style.backgroundColor = '#e0f7e9';
+    } else {
+        pilihan.parentElement.innerHTML += ' <span class="wrong">&#10006;</span>';
+        feedback.innerHTML = `
+            <p>Jawaban anda tidak benar.</p>
+            <a href="#" class="button-pdf">Kunci Jawaban PDF</a>
+            <p>Jawaban yang benar adalah: <strong>D. HCl dan NaOH</strong></p>
+        `;
+        feedback.classList.add('salah');
+        feedback.style.display = 'block';
+    }
+    feedback.style.display = 'block';
+}
+</script>
+
+</body>
+</html>
