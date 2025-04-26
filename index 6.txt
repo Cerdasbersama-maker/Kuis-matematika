@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Kuis UN SMP 2018–2019 Bergambar</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
+    .soal { background: white; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+    .penjelasan { margin-top: 10px; font-weight: bold; }
+    button { margin-top: 10px; }
+    img { display: block; margin: 10px auto; width: 300px; }
+  </style>
+</head>
+<body>
+  <h1>Kuis UN SMP 2018–2019 (Soal 1–10 Bergambar)</h1>
+
+  <!-- Soal 1 -->
+  <div class="soal">
+    <p>1. Urutan pecahan terkecil ke terbesar dari bilangan 0,6 ; 55% ; 2/3 ; 0,58 adalah …</p>
+    <img src="https://drive.google.com/uc?id=ID-GAMBAR-1" alt="Gambar Soal 1">
+    <p><input type="radio" name="soal1"> a) 55% ; 0,58 ; 0,6 ; 2/3</p>
+    <p><input type="radio" name="soal1"> b) 0,6 ; 55% ; 0,58 ; 2/3</p>
+    <p><input type="radio" name="soal1"> c) 2/3 ; 55% ; 0,58 ; 0,6</p>
+    <p><input type="radio" name="soal1"> d) 0,6 ; 2/3 ; 55% ; 0,58</p>
+    <p><b>Penjelasan:</b> Urutan pecahan dalam desimal: 0,55; 0,58; 0,6; 0,666.</p>
+  </div>
+
+  <!-- Soal 2 -->
+  <div class="soal">
+    <p>2. Nilai dari (3√3)<sup>-2</sup> adalah</p>
+    <img src="https://drive.google.com/uc?id=ID-GAMBAR-2" alt="Gambar Soal 2">
+    <p><input type="radio" name="soal2"> a) -27</p>
+    <p><input type="radio" name="soal2"> b) -1/27</p>
+    <p><input type="radio" name="soal2"> c) 1/27</p>
+    <p><input type="radio" name="soal2"> d) 27</p>
+    <p><b>Penjelasan:</b> (3√3)^-2 = 1/(3√3)^2 = 1/27.</p>
+  </div>
+
+  <!-- Soal 3 -->
+  <div class="soal">
+    <p>3. Hasil dari 3√7 x √8 + 5√14 adalah</p>
+    <img src="https://drive.google.com/uc?id=ID-GAMBAR-3" alt="Gambar Soal 3">
+    <p><input type="radio" name="soal3"> a) 15√29</p>
+    <p><input type="radio" name="soal3"> b) 11√29</p>
+    <p><input type="radio" name="soal3"> c) 15√14</p>
+    <p><input type="radio" name="soal3"> d) 11√14</p>
+    <p><b>Penjelasan:</b> 3√7 x √8 = 6√14; 6√14 + 5√14 = 11√14.</p>
+  </div>
+
+  <!-- Soal 4 -->
+  <div class="soal">
+    <p>4. Amir menjawab 48 soal dari 50 dan skornya 100. Berapa soal yang benar?</p>
+    <img src="https://drive.google.com/uc?id=ID-GAMBAR-4" alt="Gambar Soal 4">
+    <p><input type="radio" name="soal4"> a) 25 soal</p>
+    <p><input type="radio" name="soal4"> b) 33 soal</p>
+    <p><input type="radio" name="soal4"> c) 40 soal</p>
+    <p><input type="radio" name="soal4"> d) 48 soal</p>
+    <p><b>Penjelasan:</b> Dari sistem persamaan, jawabannya 33 soal benar.</p>
+  </div>
+
+  <!-- Soal 5 -->
+  <div class="soal">
+    <p>5. Jika 2 Mei adalah hari Selasa, maka 17 Agustus adalah ...</p>
+    <img src="https://drive.google.com/uc?id=ID-GAMBAR-5" alt="Gambar Soal 5">
+    <p><input type="radio" name="soal5"> a) Rabu</p>
+    <p><input type="radio" name="soal5"> b) Kamis</p>
+    <p><input type="radio" name="soal5"> c) Sabtu</p>
+    <p><input type="radio" name="soal5"> d) Minggu</p>
+    <p><b>Penjelasan:</b> Jumlah hari 107 hari, sisa 2, berarti Kamis.</p>
+  </div>
+
+  <!-- Soal 6 -->
+  <div class="soal">
+    <p>6. Pemborong butuh 64 orang selama 49 hari. Jika mau selesai 28 hari, tambah pekerja?</p>
+    <img src="https://drive.google.com/uc?id=ID-GAMBAR-6" alt="Gambar Soal 6">
+    <p><input type="radio" name="soal6"> a) 38 pekerja</p>
+    <p><input type="radio" name="soal6"> b) 48 pekerja</p>
+    <p><input type="radio" name="soal6"> c) 102 pekerja</p>
+    <p><input type="radio" name="soal6"> d) 112 pekerja</p>
+    <p><b>Penjelasan:</b> Perlu 112 pekerja, tambah 48 orang.</p>
+  </div>
+
+  <!-- Soal 7 -->
+  <div class="soal">
+    <p>7. Jika A = 2/3 I dan I = 2/5 R, maka perbandingan A : I : R?</p>
+    <img src="https://drive.google.com/uc?id=ID-GAMBAR-7" alt="Gambar Soal 7">
+    <p><input type="radio" name="soal7"> a) 2:7:5</p>
+    <p><input type="radio" name="soal7"> b) 2:12:5</p>
+    <p><input type="radio" name="soal7"> c) 4:6:15</p>
+    <p><input type="radio" name="soal7"> d) 8:10:7</p>
+    <p><b>Penjelasan:</b> Hasil perbandingan 4:6:15.</p>
+  </div>
+
+  <!-- Soal 8 -->
+  <div class="soal">
+    <p>8. Denah kantor 10cmx8cm, ukuran asli 25mx20m, skala?</p>
+    <img src="https://drive.google.com/uc?id=ID-GAMBAR-8" alt="Gambar Soal 8">
+    <p><input type="radio" name="soal8"> a) 1:20</p>
+    <p><input type="radio" name="soal8"> b) 1:25</p>
+    <p><input type="radio" name="soal8"> c) 1:200</p>
+    <p><input type="radio" name="soal8"> d) 1:250</p>
+    <p><b>Penjelasan:</b> Skala gambar 1:250.</p>
+  </div>
+
+  <!-- Soal 9 -->
+  <div class="soal">
+    <p>9. Jika Un = 10n + 3, maka U22 + U24 =</p>
+    <img src="https://drive.google.com/uc?id=ID-GAMBAR-9" alt="Gambar Soal 9">
+    <p><input type="radio" name="soal9"> a) 482</p>
+    <p><input type="radio" name="soal9"> b) 466</p>
+    <p><input type="radio" name="soal9"> c) 470</p>
+    <p><input type="radio" name="soal9"> d) 478</p>
+    <p><b>Penjelasan:</b> U22 = 223, U24 = 243, total 466.</p>
+  </div>
+
+  <!-- Soal 10 -->
+  <div class="soal">
+    <p>10. Ani menabung Rp800.000 jadi Rp992.000. Bunga 16%/tahun, lama menabung?</p>
+    <img src="https://drive.google.com/uc?id=ID-GAMBAR-10" alt="Gambar Soal 10">
+    <p><input type="radio" name="soal10"> a) 8 bulan</p>
+    <p><input type="radio" name="soal10"> b) 18 bulan</p>
+    <p><input type="radio" name="soal10"> c) 24 bulan</p>
+    <p><input type="radio" name="soal10"> d) 32 bulan</p>
+    <p><b>Penjelasan:</b> Lama menabung 8 bulan.</p>
+  </div>
+
+</body>
+</html>
