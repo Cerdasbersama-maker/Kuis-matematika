@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
   <title>Kuis Matematika</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; background: #f4f4f4; }
+    .soal { background: white; padding: 20px; border-radius: 10px; max-width: 500px; margin: auto; }
+    button { margin: 5px 0; width: 100%; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+    .benar { background-color: #4CAF50; color: white; }
+    .salah { background-color: #f44336; color: white; }
+  </style>
 </head>
 <body>
-  <h1>Kuis Matematika</h1>
-  <p>1. Urutan pecahan terkecil ke terbesar dari bilangan 0,6 ; 55% ; 2/3 ; 0,58 adalah?</p>
-  <input type="text" id="q1">
-  <button onclick="cekJawaban()">Cek Jawaban</button>
+  <div class="soal">
+    <h2>Soal 1</h2>
+    <p>Urutan pecahan terkecil ke terbesar dari bilangan 0,6 ; 55% ; 2/3 ; 0,58 adalah?</p>
+    <button onclick="cekJawaban(this, false)">a. 0,6 ; 55% ;  0,58 ; 2/3</button>
+    <button onclick="cekJawaban(this, false)">b. 2/3 ; 55% ; 0,58 ; 0,6</button>
+    <button onclick="cekJawaban(this, true)">c. 55% ; 0,58 ; 0,6 ; 2/3</button>
+    <button onclick="cekJawaban(this, false)">d. 0,6 ; 2/3 ; 55% ; 0,58</button>
+    <p id="feedback1"></p>
+  </div>
 
-  <p id="hasil"></p>
+  <div class="soal">
+    <h2>Soal 2</h2>
+    <p>Urutan pecahan terkecil ke terbesar dari bilangan 0,6 ; 55% ; 2/3 ; 0,58 adalah …?</p>
+    <button onclick="cekJawaban(this, false)">0,6 ; 55% ;  0,58 ; 2/3</button>
+    <button onclick="cekJawaban(this, true)">55% ; 0,58 ; 0,6 ; 2/3</button>
+    <button onclick="cekJawaban(this, false)">2/3 ; 55% ; 0,58 ; 0,6
+</button>
+    <button onclick="cekJawaban(this, false)">0,6 ; 2/3 ; 55% ; 0,58</button>
+    <p id="feedback2"></p>
+  </div>
 
   <script>
-    function cekJawaban() {
-      var jawaban = document.getElementById("q1").value;
-      if (jawaban == "55% ; 0,58 ; 0,6 ; 2/3") {
-        document.getElementById("hasil").innerText = "Benar!";
+    function cekJawaban(tombol, benar) {
+      const semuaTombol = document.querySelectorAll("button");
+      semuaTombol.forEach(btn => btn.disabled = true); // Disable semua tombol setelah diklik
+
+      const feedback = tombol.parentElement.querySelector('p');
+      if (benar) {
+        tombol.classList.add("benar");
+        feedback.innerText = "✅ Benar!";
       } else {
-        document.getElementById("hasil").innerText = "Salah, coba lagi ya.";
+        tombol.classList.add("salah");
+        feedback.innerText = "❌ Salah! Jawaban yang benar 55% ; 0,58 ; 0,6 ; 2/3";
       }
     }
   </script>
